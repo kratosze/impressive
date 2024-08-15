@@ -1,0 +1,92 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: dubai;
+}
+section{
+	position: relative;
+	min-height: 100vh;
+	background: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section h2{
+	color: #fff;
+	font-size: 5em;
+	cursor: default;
+}
+
+section h2 span{
+    color: rgb(240, 99, 99);
+}
+
+section .btn{
+    margin: 25rem 10rem 0rem 0;
+    font-size: 30px;
+}
+
+.light{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	background: radial-gradient(circle at var(--x) var(--y) , transparent 10%, rgba(0,0,0,0.95) 20%);
+}
+
+.watermark {
+    opacity: 0.5;
+    color: rgb(243, 214, 214);
+    position: fixed;
+    top: 95%;
+    left: 47%;
+}
+
+.watermark a{
+    text-decoration: none;
+    color: rgb(243, 214, 214);
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+	section h2 {
+	  font-size: 3.5em;
+	}
+  
+	section .btn {
+	  margin: 10rem 5rem 0 0;
+	  font-size: 24px;
+	}
+  
+	.watermark {
+	  top: 90%;
+	  left: 50%;
+	  font-size: 0.9em;
+	}
+  }
+  
+  /* Mobile View */
+  @media (max-width: 480px) {
+	section {
+	  flex-direction: column;
+	  padding: 20px;
+	}
+  
+	section h2 {
+	  font-size: 2.5em;
+	}
+  
+	section .btn {
+	  margin: 5rem 0 0 0;
+	  font-size: 20px;
+	}
+  
+	.watermark {
+	  top: 85%;
+	  left: 50%;
+	  font-size: 0.8em;
+	}
+  }
